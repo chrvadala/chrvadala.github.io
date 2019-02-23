@@ -1,16 +1,16 @@
 import React from 'react'
 import ProjectCard from "./ProjectCard";
-import projects from '../database/projects';
-import Introduction from "./Introduction";
+import PropTypes from 'prop-types'
 import styles from './Projects.module.css'
 
-export default function Projects() {
+export default function Projects({projects}) {
   return (
-    <>
-      <Introduction/>
-      <div className={styles.grid}>
-        {projects.map(project => <ProjectCard key={project.id} project={project}/>)}
-      </div>
-    </>
+    <div className={styles.grid}>
+      {projects.map(project => <ProjectCard key={project.id} project={project}/>)}
+    </div>
   )
+}
+
+Projects.propTypes = {
+  projects: PropTypes.array.isRequired,
 }

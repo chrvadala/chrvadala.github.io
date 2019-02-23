@@ -1,31 +1,39 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './Introduction.module.css'
 import avatar from './avatar.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 
 const linkedinUri = 'https://www.linkedin.com/in/chrvadala';
 
-export default function Introduction() {
+export default function Introduction({author}) {
   return (
     <div className={styles.container}>
 
-      <img className={styles.avatar} src={avatar} alt="Christian Vadalà"/>
+      <img className={styles.avatar} src={avatar} alt={author.name}/>
 
       <h1 className={styles.me}>
-        Christian Vadalà
+        {author.name}
         <a href={linkedinUri}><FontAwesomeIcon icon={faLinkedin}/></a>
-        <a href={linkedinUri}><FontAwesomeIcon icon={faEnvelope}/></a>
       </h1>
 
       <div className={styles.role}>
-        React & Node.js developer
+        {author.role}
       </div>
 
       <div className={styles.location}>
-        <FontAwesomeIcon size="lg" icon={faMapMarkerAlt}/> <span>Rome, Italy, Europe, Earth</span>
+        <FontAwesomeIcon size="lg" icon={faMapMarkerAlt}/> <span>{author.location}</span>
       </div>
     </div>
   )
+}
+
+Introduction.propTypes = {
+  author: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+  })
 }
