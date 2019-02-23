@@ -1,0 +1,18 @@
+.card{
+  background-color: #fff;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  padding: 16px;
+  height: 100%;
+}
+
+.code{
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  background-color: #f6f8fa;
+  color: #24292e;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}

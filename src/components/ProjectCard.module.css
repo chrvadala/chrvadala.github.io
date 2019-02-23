@@ -1,0 +1,32 @@
+.container {
+  composes: card from './_common.css';
+}
+
+.title a.title{
+  color: #000;
+}
+
+.title a.title:hover{
+  color: #0366d6;
+}
+
+.title a.link {
+  display: inline-block;
+  float: right;
+  padding-left: 15px;
+}
+
+ul.badges {
+  list-style-type: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+ul.badges li {
+  display: inline;
+  padding-right: 5px;
+}
+
+.code{
+  composes: code from './_common.css';
+}
