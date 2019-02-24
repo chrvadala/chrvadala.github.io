@@ -5,7 +5,7 @@
   margin-bottom: 10px;
 }
 
-.avatar{
+.avatar {
   width: 250px;
   height: 250px;
   float: left;
@@ -13,19 +13,37 @@
   margin-top: -40px;
 }
 
-.me a{
+.me{
+  margin-bottom: 5px;
+}
+
+.me a {
   float: right;
   padding-left: 10px;
 }
 
-.role{
+.role {
+  margin-bottom: 20px;
+}
+
+.location {
+  font-size: 80%;
   margin-bottom: 10px;
 }
 
-.location{
+.location span {
+  padding-left: 5px;
+}
+
+.donate {
   font-size: 80%;
 }
 
-.location span{
-  padding-left: 5px;
+.donate a {
+  color: #000;
+  padding-left: 8px;
+}
+
+.donate a:hover {
+  color: #0366d6;
 }

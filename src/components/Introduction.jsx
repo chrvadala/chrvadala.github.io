@@ -3,10 +3,8 @@ import PropTypes from 'prop-types'
 import styles from './Introduction.module.css'
 import avatar from './avatar.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faLinkedin, faPaypal} from "@fortawesome/free-brands-svg-icons";
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
-
-const linkedinUri = 'https://www.linkedin.com/in/chrvadala';
 
 export default function Introduction({author}) {
   return (
@@ -16,7 +14,9 @@ export default function Introduction({author}) {
 
       <h1 className={styles.me}>
         {author.name}
-        <a href={linkedinUri}><FontAwesomeIcon icon={faLinkedin}/></a>
+        {author.linkedin && (
+          <a target="_blank" rel="noopener noreferrer" href={author.linkedin}><FontAwesomeIcon icon={faLinkedin}/></a>
+        )}
       </h1>
 
       <div className={styles.role}>
@@ -26,6 +26,13 @@ export default function Introduction({author}) {
       <div className={styles.location}>
         <FontAwesomeIcon size="lg" icon={faMapMarkerAlt}/> <span>{author.location}</span>
       </div>
+
+      {author.paypal && (
+        <div className={styles.donate}>
+          <FontAwesomeIcon size="lg" icon={faPaypal}/>
+          <a target="_blank" rel="noopener noreferrer" href={author.paypal}>Donate</a>
+        </div>
+      )}
     </div>
   )
 }
@@ -35,5 +42,7 @@ Introduction.propTypes = {
     name: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
+    linkedin: PropTypes.string,
+    paypal: PropTypes.string,
   })
 }
