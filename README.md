@@ -12,11 +12,11 @@ Start dev mode
 ```
 
 You can change all the website contents editing these two files: 
-- [databases/author.js](./databases/author.js) 
-- [databases/projects.js](./databases/projects.js)
+- [src/databases/author.js](./src/databases/author.js) 
+- [src/databases/projects.js](./src/databases/projects.js)
 
 ## Publish 
-Build and `publish` a new version on gh-pages
+Build and publish a new version on gh-pages
 ```
   yarn release
 ```
