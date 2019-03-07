@@ -3,7 +3,7 @@ export default [
     id: 'react-svg-pan-zoom',
     org: 'chrvadala',
     name: "React SVG Pan Zoom",
-    description: 'React SVG Pan Zoom is a React component that adds pan and zoom features to the SVG images. It helps to display big SVG images in a small space.',
+    description: 'React SVG Pan Zoom is a React component that adds pan and zoom features to the SVG images. It helps to display big SVG images in a small space',
     ghPages: true,
     npm: true,
   },
@@ -12,7 +12,7 @@ export default [
     id: 'transformation-matrix',
     org: 'chrvadala',
     name: "Transformation Matrix",
-    description: 'Javascript isomorphic 2D affine transformations written in ES6 syntax. Manipulate transformation matrices with this totally tested library.',
+    description: 'Javascript isomorphic 2D affine transformations written in ES6 syntax. Manipulate transformation matrices with this totally tested library',
     coveralls: true,
     travis: true,
     npm: true,
@@ -22,7 +22,7 @@ export default [
     id: 'react-planner',
     org: 'cvdlab',
     name: "React Planner",
-    description: 'A React Component for plans design. Draw a 2D floorplan and navigate it in 3D mode.',
+    description: 'A React Component for plans design. Draw a 2D floorplan and navigate it in 3D mode',
     ghPages: true,
     npm: true,
   },
@@ -41,7 +41,7 @@ export default [
     id: 'music-beat-detector',
     org: 'chrvadala',
     name: "Music Beat Detector",
-    description: 'Library that analyzes a music stream and detects any beat. It can be used to control lights or any magic effect by the music wave.\n',
+    description: 'Library that analyzes a music stream and detects any beat. It can be used to control lights or any magic effect by the music wave',
     npm: true,
   },
 
@@ -51,6 +51,16 @@ export default [
     name: "Create Music Stream",
     description: 'Creates a PCM 16 bit Little Endian Stream from a mp3 file or youtube video',
     npm: true,
+  },
+
+  {
+    id: 'neopixel',
+    org: 'chrvadala',
+    name: "Neopixel",
+    description: 'Node.js library to control Adafruit NeoPixel based on ws2812 led family',
+    npm: true,
+    travis: true,
+    coveralls: true,
   },
 
   {
@@ -79,31 +89,29 @@ export default [
     description: 'Potree Converter backed by Docker',
   },
 
-  /*
-  {
-    id: 'walle',
-    org: 'cvdlab',
-    name: "Walle",
-    description: 'Visual plan designer',
-    ghPages: true,
-  },
-  */
+  // {
+  //   id: 'walle',
+  //   org: 'cvdlab',
+  //   name: "Walle",
+  //   description: 'Visual plan designer',
+  //   ghPages: true,
+  // },
 
-  {
-    id: 'const-version',
-    org: 'chrvadala',
-    name: "MQTT Dispatcher",
-    description: 'A tiny command line tool that extract `package.json` version and generate `export const VERSION=\'...\'` file in ES6 syntax',
-    npm: true,
-    travis: true,
-  },
+  // {
+  //   id: 'const-version',
+  //   org: 'chrvadala',
+  //   name: "Const Version",
+  //   description: 'A tiny command line tool that extract `package.json` version and generate `export const VERSION=\'...\'` file in ES6 syntax',
+  //   npm: true,
+  //   travis: true,
+  // },
 
-  {
-    id: 'sudoku.go',
-    org: 'chrvadala',
-    name: "sudoku.go",
-    description: 'Sudoku solver written in golang',
-  },
+  // {
+  //   id: 'sudoku.go',
+  //   org: 'chrvadala',
+  //   name: "sudoku.go",
+  //   description: 'Sudoku solver written in golang',
+  // },
 
   {
     id: 'tableauSolver',
