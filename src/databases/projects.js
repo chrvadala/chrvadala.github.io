@@ -28,6 +28,14 @@ export default [
   },
 
   {
+    id: 'music-beat-detector',
+    org: 'chrvadala',
+    name: "Music Beat Detector",
+    description: 'Library that analyzes a music stream and detects any beat. It can be used to control lights or any magic effect by the music wave',
+    npm: true,
+  },
+
+  {
     id: 'mqtt-dispatcher',
     org: 'chrvadala',
     name: "MQTT Dispatcher",
@@ -35,14 +43,6 @@ export default [
     npm: true,
     travis: true,
     coveralls: true,
-  },
-
-  {
-    id: 'music-beat-detector',
-    org: 'chrvadala',
-    name: "Music Beat Detector",
-    description: 'Library that analyzes a music stream and detects any beat. It can be used to control lights or any magic effect by the music wave',
-    npm: true,
   },
 
   {
