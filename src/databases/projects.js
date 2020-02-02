@@ -90,29 +90,13 @@ export default [
     description: 'Potree Converter backed by Docker',
   },
 
-  // {
-  //   id: 'walle',
-  //   org: 'cvdlab',
-  //   name: "Walle",
-  //   description: 'Visual plan designer',
-  //   ghPages: true,
-  // },
-
-  // {
-  //   id: 'const-version',
-  //   org: 'chrvadala',
-  //   name: "Const Version",
-  //   description: 'A tiny command line tool that extract `package.json` version and generate `export const VERSION=\'...\'` file in ES6 syntax',
-  //   npm: true,
-  //   travis: true,
-  // },
-
-  // {
-  //   id: 'sudoku.go',
-  //   org: 'chrvadala',
-  //   name: "sudoku.go",
-  //   description: 'Sudoku solver written in golang',
-  // },
+  {
+    id: 'weather-station',
+    org: 'chrvadala',
+    name: "Weather Station",
+    description: 'Connector able to download weather data from an Oregon Scientific EMR211X station, leveraging on Bluetooth Low Energy connection',
+    npm: true,
+  },
 
   {
     id: 'tableauSolver',
@@ -120,4 +104,29 @@ export default [
     name: "Tableau Solver",
     description: 'Prolog algorithm that applies the method of analytic tableaux and creates a graphical representation of a propositional tableau',
   },
+
+  {
+    id: 'walle',
+    org: 'cvdlab',
+    name: "Walle",
+    description: 'Visual plan designer',
+    ghPages: true,
+  },
+
+  {
+    id: 'sudoku.go',
+    org: 'chrvadala',
+    name: "sudoku.go",
+    description: 'Sudoku solver written in golang',
+  },
+
+  {
+    id: 'const-version',
+    org: 'chrvadala',
+    name: "Const Version",
+    description: 'A tiny command line tool that extract `package.json` version and generate `export const VERSION=\'...\'` file in ES6 syntax',
+    npm: true,
+    travis: true,
+  },
+
 ]
