@@ -37,6 +37,16 @@ export default [
   },
 
   {
+    id: 'node-ble',
+    org: 'chrvadala',
+    name: "Bluetooth Low Energy (BLE) library",
+    description: 'Bluetooth Low Energy (BLE) library written with only Javascript (no bindings) - baked by Bluez via DBus',
+    npm: true,
+    travis: true,
+    coveralls: true,
+  },
+
+  {
     id: 'mqtt-dispatcher',
     org: 'chrvadala',
     name: "MQTT Dispatcher",
