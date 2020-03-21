@@ -39,7 +39,7 @@ export default [
   {
     id: 'node-ble',
     org: 'chrvadala',
-    name: "Bluetooth Low Energy (BLE) library",
+    name: "Bluetooth Low Energy (BLE)",
     description: 'Bluetooth Low Energy (BLE) library written with only Javascript (no bindings) - baked by Bluez via DBus',
     npm: true,
     travis: true,
