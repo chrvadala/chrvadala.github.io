@@ -44,14 +44,15 @@ jobs:
           name: build
           path: build
 
+    - name: Install gh-pages
+      run: yarn global add gh-pages
+
       - name: Publish on gh-pages
         run: |
-          yarn global add gh-pages
           _BIN=$(yarn global dir)/node_modules/.bin
           ls $_BIN
           echo $_BIN
           $_BIN/gh-pages \
-            --silent \
             --dist "$GITHUB_WORKSPACE/build" \
             --branch master \
             --repo "https://$GH_TOKEN@github.com/chrvadala/chrvadala.github.io" \
