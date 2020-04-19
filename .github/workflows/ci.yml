@@ -19,7 +19,7 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Install depencies
+      - name: Install dependencies
         run: yarn install
 
       - name: Build website
@@ -47,9 +47,11 @@ jobs:
       - name: Setup gh-pages
         run: yarn global add gh-pages
 
+      - run: yarn global dir
+
       - name: Publish on gh-pages
         run: |
-          gh-pages \
+          /usr/local/bin/gh-pages \
             --silent \
             --dist "$GITHUB_WORKSPACE/build" \
             --branch master \
