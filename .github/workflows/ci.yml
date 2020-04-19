@@ -1,0 +1,27 @@
+on: [push]
+
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+
+      - run: |
+          yarn install
+          yarn build
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: build
+          path: build
