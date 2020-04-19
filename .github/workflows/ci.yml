@@ -44,8 +44,8 @@ jobs:
           name: build
           path: build
 
-    - name: Install gh-pages
-      run: yarn global add gh-pages
+      - name: Install gh-pages
+        run: yarn global add gh-pages
 
       - name: Publish on gh-pages
         run: |
