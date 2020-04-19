@@ -9,7 +9,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "bootstrap": "^4.4.1",
-    "gh-pages": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -17,8 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "release": "react-scripts build && gh-pages --dist build --branch master"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
