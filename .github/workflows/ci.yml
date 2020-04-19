@@ -55,7 +55,7 @@ jobs:
           $_BIN/gh-pages \
             --dist "$GITHUB_WORKSPACE/build" \
             --branch master \
-            --repo "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/chrvadala/chrvadala.github.io" \
+            --repo "https://x-access-token:$GITHUB_TOKEN@github.com/chrvadala/chrvadala.github.io" \
             --user "$GH_USER"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
