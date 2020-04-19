@@ -47,11 +47,11 @@ jobs:
       - name: Setup gh-pages
         run: yarn global add gh-pages
 
-      - run: yarn global dir
-
       - name: Publish on gh-pages
         run: |
-          /usr/local/bin/gh-pages \
+          _BIN=$(yarn global dir)
+          echo $_BIN
+          $_BIN/gh-pages \
             --silent \
             --dist "$GITHUB_WORKSPACE/build" \
             --branch master \
