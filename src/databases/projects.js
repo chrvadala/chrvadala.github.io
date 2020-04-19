@@ -73,6 +73,13 @@ export default [
     travis: true,
     coveralls: true,
   },
+  
+  {
+    id: "awesome-protocols",
+    org: "chrvadala",
+    name: "Awesome Protocols",
+    description: "Curated list of awesome technology protocols with a reference to official RFCs"
+  },
 
   {
     id: 'sliding-window-max',
