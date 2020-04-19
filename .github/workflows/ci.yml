@@ -3,25 +3,59 @@ on: [push]
 jobs:
   ci:
     name: CI
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v1
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
 
-      - uses: actions/cache@v1
+      - name: Setup cache
+        uses: actions/cache@v1
         id: yarn-cache
         with:
           path: node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
-      - run: |
-          yarn install
-          yarn build
+      - name: Install depencies
+        run: yarn install
 
-      - uses: actions/upload-artifact@v1
+      - name: Build website
+        run: yarn build
+
+      - name: Publish Artifact
+        uses: actions/upload-artifact@v1
         with:
           name: build
           path: build
+
+  cd:
+    name: CD
+    runs-on: ubuntu-latest
+    needs: [ci]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: build
+          path: build
+
+      - name: Setup gh-pages
+        run: yarn global add gh-pages
+
+      - name: Publish on gh-pages
+        run: |
+          gh-pages \
+            --silent \
+            --dist "$GITHUB_WORKSPACE/build" \
+            --branch master \
+            --repo "https://$GH_TOKEN@github.com/chrvadala/chrvadala.github.io" \
+            --user "$GH_USER"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{secrets.USER }}
+
