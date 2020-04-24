@@ -1,7 +1,7 @@
 name: Continuous Delivery
 
 on:
-  push: ["develop"]
+  [push, pull_request]
 
 env:
   RUNNER_TEMP: /tmp
