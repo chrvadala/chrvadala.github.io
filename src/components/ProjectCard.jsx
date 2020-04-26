@@ -8,6 +8,7 @@ export default function ProjectCard({project}) {
   const npmUri = `https://www.npmjs.com/package/${project.id}`
   const coverallsUri = `https://coveralls.io/github/${project.org}/${project.id}`
   const travisUri = `https://travis-ci.org/${project.org}/${project.id}`
+  const ghActionsUri = `https://github.com/${project.org}/${project.id}/actions`
 
   return (
     <article className={styles.container}>
@@ -73,6 +74,18 @@ export default function ProjectCard({project}) {
               <img
                 src={`https://img.shields.io/travis/${project.org}/${project.id}.svg?maxAge=7200&style=flat-square`}
                 alt={`Travis Status for ${project.name}`}
+                style={{maxWidth: "100%"}}/>
+            </a>
+          </li>
+        )}
+
+        {/*gh-actions build*/}
+        {project.ghActions && (
+          <li>
+            <a href={ghActionsUri} target="_blank" rel="noopener noreferrer">
+              <img
+                src={`https://github.com/${project.org}/${project.id}/workflows/Build/badge.svg`}
+                alt={`Build status for ${project.name}`}
                 style={{maxWidth: "100%"}}/>
             </a>
           </li>

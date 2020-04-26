@@ -73,7 +73,7 @@ export default [
     travis: true,
     coveralls: true,
   },
-  
+
   {
     id: "awesome-protocols",
     org: "chrvadala",
@@ -146,4 +146,11 @@ export default [
     travis: true,
   },
 
+  {
+    id: 'chrvadala.github.io',
+    org: 'chrvadala',
+    name: "chrvadala.github.io",
+    description: 'My personal website source code.',
+    ghActions: true,
+  },
 ]
