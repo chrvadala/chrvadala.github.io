@@ -1,4 +1,4 @@
-name: Continuous Delivery
+name: Test
 
 on:
   [push, pull_request]
@@ -30,18 +30,3 @@ jobs:
 
       - name: Build website
         run: yarn build
-
-      - name: Publish on gh-pages
-        run: |
-          yarn global add gh-pages
-          _BIN=$(yarn global dir)/node_modules/.bin
-          ls $_BIN
-          echo $_BIN
-          $_BIN/gh-pages \
-            --dist "$GITHUB_WORKSPACE/build" \
-            --branch master \
-            --repo "https://x-access-token:$GH_TOKEN@github.com/chrvadala/chrvadala.github.io" \
-            --user "$GH_USER"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_USER: ${{secrets.USER }}
