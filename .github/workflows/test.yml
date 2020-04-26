@@ -13,20 +13,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: v12
 
-      - name: Setup cache
-        uses: actions/cache@v1
+      - uses: actions/cache@v1
         id: yarn-cache
         with:
           path: node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Install dependencies
-        run: yarn install --production
+      - run: yarn install --production
 
-      - name: Build website
-        run: yarn build
+      - run: yarn build
