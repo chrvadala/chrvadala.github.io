@@ -84,8 +84,8 @@ export default function ProjectCard({project}) {
           <li>
             <a href={ghActionsUri} target="_blank" rel="noopener noreferrer">
               <img
-                src={`https://github.com/${project.org}/${project.id}/workflows/Build/badge.svg`}
-                alt={`Build status for ${project.name}`}
+                src={`https://github.com/${project.org}/${project.id}/workflows/Test/badge.svg`}
+                alt={`Test status for ${project.name}`}
                 style={{maxWidth: "100%"}}/>
             </a>
           </li>
