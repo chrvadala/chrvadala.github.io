@@ -62,6 +62,8 @@ export default [
     name: "Create Music Stream",
     description: 'Creates a PCM 16 bit Little Endian Stream from a mp3 file or youtube video',
     npm: true,
+    ghActions: true,
+    coveralls: true,
   },
 
   {
