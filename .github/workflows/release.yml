@@ -1,50 +1,37 @@
 name: Release
 
 on:
-  release:
-    types: [created]
-
-env:
-  RUNNER_TEMP: /tmp
+  push:
+    branches:
+      - sources
 
 jobs:
   build:
-    name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
+    outputs:
+      version: ${{ env.VERSION }}
     steps:
       - uses: actions/checkout@v2
-
       - uses: actions/setup-node@v1
         with:
-          node-version: v12
-
-      - uses: actions/cache@v1
-        id: yarn-cache
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-
-      - run: yarn install --production
-
+          node-version: 12
+      - run: yarn install
       - run: yarn build
-
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2
         with:
-          name: Website
+          name: artifact
           path: build
 
   release:
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     needs: [build]
     steps:
       - uses: actions/checkout@v2
-
       - uses: actions/download-artifact@v1
         with:
-          name: Website
+          name: artifact
           path: build
-
       - name: Publish on gh-pages
         run: |
           yarn global add gh-pages
