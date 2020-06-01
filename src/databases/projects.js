@@ -72,7 +72,7 @@ export default [
     name: "Neopixel",
     description: 'Node.js library to control Adafruit NeoPixel based on ws2812 led family',
     npm: true,
-    travis: true,
+    ghActions: true,
     coveralls: true,
   },
 
