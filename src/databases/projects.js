@@ -5,7 +5,7 @@ export default [
     name: "React SVG Pan Zoom",
     description: 'React SVG Pan Zoom is a React component that adds pan and zoom features to the SVG images. It helps to display big SVG images in a small space',
     ghPages: true,
-    travis: true,
+    ghActions: true,
     npm: true,
   },
 
@@ -15,7 +15,7 @@ export default [
     name: "Transformation Matrix",
     description: 'Javascript isomorphic 2D affine transformations written in ES6 syntax. Manipulate transformation matrices with this totally tested library',
     coveralls: true,
-    travis: true,
+    ghActions: true,
     npm: true,
   },
 
