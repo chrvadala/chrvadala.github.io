@@ -90,7 +90,7 @@ export default [
     description: 'Given a stream of data this algorithm returns (for every added value) the current max value',
     npm: true,
     coveralls: true,
-    travis: true,
+    ghActions: true,
   },
 
   {
