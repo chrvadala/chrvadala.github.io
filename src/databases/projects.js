@@ -80,7 +80,8 @@ export default [
     id: "awesome-protocols",
     org: "chrvadala",
     name: "Awesome Protocols",
-    description: "Curated list of awesome technology protocols with a reference to official RFCs"
+    description: "Curated list of awesome technology protocols with a reference to official RFCs",
+    ghActions: true,
   },
 
   {
