@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './Introduction.module.css'
 import avatar from './avatar.png'

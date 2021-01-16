@@ -2,3 +2,4 @@
 .actrc
 node_modules
 build
+.eslintcache

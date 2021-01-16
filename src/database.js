@@ -1,4 +1,12 @@
-export default [
+export const author = {
+  name: "Christian Vadalà",
+  role: "React.js & Node.js open source developer",
+  location: "Rome, Italy, Europe, Earth",
+  linkedin: "https://www.linkedin.com/in/chrvadala",
+  paypal: "https://www.paypal.me/chrvadala/15",
+}
+
+export const projects = [
   {
     id: 'react-svg-pan-zoom',
     org: 'chrvadala',
