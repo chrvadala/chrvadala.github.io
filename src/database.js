@@ -37,14 +37,6 @@ export const projects = [
   },
 
   {
-    id: 'music-beat-detector',
-    org: 'chrvadala',
-    name: "Music Beat Detector",
-    description: 'Library that analyzes a music stream and detects any beat. It can be used to control lights or any magic effect by the music wave',
-    npm: true,
-  },
-
-  {
     id: 'node-ble',
     org: 'chrvadala',
     name: "Bluetooth Low Energy (BLE)",
@@ -52,6 +44,14 @@ export const projects = [
     npm: true,
     ghActions: true,
     coveralls: true,
+  },
+
+  {
+    id: 'music-beat-detector',
+    org: 'chrvadala',
+    name: "Music Beat Detector",
+    description: 'Library that analyzes a music stream and detects any beat. It can be used to control lights or any magic effect by the music wave',
+    npm: true,
   },
 
   {
@@ -63,22 +63,22 @@ export const projects = [
   },
 
   {
-    id: 'mqtt-dispatcher',
-    org: 'chrvadala',
-    name: "MQTT Dispatcher",
-    description: 'Node.js message dispatcher for MQTT',
-    npm: true,
-    travis: true,
-    coveralls: true,
-  },
-
-  {
     id: 'create-music-stream',
     org: 'chrvadala',
     name: "Create Music Stream",
     description: 'Creates a PCM 16 bit Little Endian Stream from a mp3 file or youtube video',
     npm: true,
     ghActions: true,
+    coveralls: true,
+  },
+
+  {
+    id: 'mqtt-dispatcher',
+    org: 'chrvadala',
+    name: "MQTT Dispatcher",
+    description: 'Node.js message dispatcher for MQTT',
+    npm: true,
+    travis: true,
     coveralls: true,
   },
 
