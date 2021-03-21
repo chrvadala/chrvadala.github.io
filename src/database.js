@@ -55,6 +55,14 @@ export const projects = [
   },
 
   {
+    id: 'aws-cloud-stacks',
+    org: 'chrvadala',
+    name: "AWS Cloud Stacks",
+    description: 'AWS CloudFormation stacks that speed-up projects development.',
+    ghActions: true,
+  },
+
+  {
     id: 'mqtt-dispatcher',
     org: 'chrvadala',
     name: "MQTT Dispatcher",
