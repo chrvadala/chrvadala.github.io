@@ -93,6 +93,13 @@ export const projects = [
   },
 
   {
+    id: 'github-actions',
+    org: 'chrvadala',
+    name: "Github Actions",
+    description: 'A collection of common Github Actions, useful to test and release libraries',
+  },
+
+  {
     id: "awesome-protocols",
     org: "chrvadala",
     name: "Awesome Protocols",
