@@ -7,14 +7,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     outputs:
       version: ${{ env.VERSION }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 16
       - run: yarn install
       - run: yarn build
       - uses: actions/upload-artifact@v2
@@ -24,11 +24,11 @@ jobs:
 
   release:
     name: Release
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     needs: [build]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@v2
         with:
           name: artifact
           path: build
