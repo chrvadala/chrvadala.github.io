@@ -100,6 +100,16 @@ export const projects = [
   },
 
   {
+    id: 'kafka-test-helper',
+    org: 'chrvadala',
+    name: "Kafka Test Helper",
+    description: 'Utility library that simplify testing of Node.js components that interacts with Kafka broker.',
+    npm: true,
+    ghActions: true,
+    coveralls: true,
+  },
+
+  {
     id: "awesome-protocols",
     org: "chrvadala",
     name: "Awesome Protocols",
