@@ -1,18 +1,22 @@
 name: Test
 
 on:
-  - push
-  - pull_request
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron:  '13 0 1 * *'
 
 jobs:
   build:
-    name: Test Nodejs
-    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        os: [ ubuntu-20.04 ]
+        node: [ 16 ]
+    name: Test Nodejs v${{ matrix.node }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: chrvadala/github-actions/nodejs-test-library-action@v1
         with:
-          node-version: 12
-          cache: yarn
-      - run: yarn install
-      - run: yarn build
+          NODE_VERSION: ${{ matrix.node }}

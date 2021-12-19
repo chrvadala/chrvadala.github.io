@@ -93,7 +93,7 @@ export default function ProjectCard({project}) {
 
       {project.npm && (
         <div className={styles.code}>
-          yarn install {project.id}
+          npm install {project.id}
         </div>
       )}
 
