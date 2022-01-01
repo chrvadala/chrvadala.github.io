@@ -18,6 +18,6 @@ export default function App({author, projects}) {
 }
 
 App.propTypes = {
-  projects: PropTypes.object.isRequired,
+  projects: PropTypes.array.isRequired,
   author: PropTypes.object.isRequired,
 }
