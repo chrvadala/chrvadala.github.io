@@ -7,8 +7,8 @@ The website is available here https://chrvadala.github.io
 ## Develop
 Start dev mode
 ```
-  yarn install
-  yarn start
+  npm install
+  npm start
 ```
 
 You can change all the website contents editing these file:
