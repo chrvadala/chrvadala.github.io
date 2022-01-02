@@ -1,7 +1,8 @@
 .container {
-  composes: card from './_common.css';
-  min-height: 282px;
-  margin-bottom: 10px;
+  min-height: 250px;
+  border: 1px solid #30363d;
+  border-radius: 3px;
+  padding: 16px;
 }
 
 .avatar {
@@ -9,14 +10,9 @@
   height: 250px;
 }
 
-@media (min-width: 970px) {
-  .container {
-    padding-top: 40px;
-  }
-
+@media (min-width: 768px) {
   .avatar {
     margin-right: 20px;
-    margin-top: -40px;
     float: left;
   }
 }
@@ -48,10 +44,5 @@
 }
 
 .donate a {
-  color: #000;
   padding-left: 8px;
-}
-
-.donate a:hover {
-  color: #0366d6;
 }

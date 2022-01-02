@@ -1,19 +1,18 @@
 .container {
-  composes: card from './_common.css';
-}
-
-.title a.title{
-  color: #000;
-}
-
-.title a.title:hover{
-  color: #0366d6;
+  border: 1px solid #30363d;
+  border-radius: 3px;
+  padding: 16px;
 }
 
 .title a.link {
-  display: inline-block;
-  float: right;
-  padding-left: 15px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .title a.link {
+    float: right;
+    padding-left: 15px;
+  }
 }
 
 ul.badges {
@@ -28,5 +27,10 @@ ul.badges li {
 }
 
 .code{
-  composes: code from './_common.css';
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  padding: 16px;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(110,118,129,0.4);
+  border-radius: 6px;
 }
