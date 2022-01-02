@@ -9,7 +9,7 @@ export default function App({author, projects}) {
       <Projects projects={projects}/>
       <small>
         Template made by <a href="https://github.com/chrvadala">chrvadala</a>{" "}
-        and available on this <a href="https://github.com/chrvadala/chrvadala.github.io">website</a>.{" "}
+        and available on this <a href="https://github.com/chrvadala/chrvadala.github.io">repository</a>.{" "}
         Feel free to clone it and create your own website.
         {/* ... but please keep these lines. */}
       </small>
