@@ -1,48 +1,16 @@
-name: Release
+name: Website
 
 on:
   push:
-    branches:
-      - sources
+      branches:
+        - main
 
 jobs:
-  build:
+  build_and_publish:
+    name: Publish Github Pages Website
     runs-on: ubuntu-20.04
-    outputs:
-      version: ${{ env.VERSION }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: chrvadala/github-actions/gh-pages-publish-action@v1
         with:
-          node-version: 16
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/upload-artifact@v2
-        with:
-          name: artifact
-          path: build
-
-  release:
-    name: Release
-    runs-on: ubuntu-20.04
-    needs: [build]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
-        with:
-          name: artifact
-          path: build
-      - name: Publish on gh-pages
-        run: |
-          yarn global add gh-pages
-          _BIN=$(yarn global dir)/node_modules/.bin
-          ls $_BIN
-          echo $_BIN
-          $_BIN/gh-pages \
-            --dist "$GITHUB_WORKSPACE/build" \
-            --branch master \
-            --repo "https://x-access-token:$GH_TOKEN@github.com/chrvadala/chrvadala.github.io" \
-            --user "$GH_USER"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_USER: ${{secrets.USER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

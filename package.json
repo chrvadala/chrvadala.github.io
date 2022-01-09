@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "website:build": "BUILD_PATH='./build-website' react-scripts build",
     "test": "exit 0"
   },
   "eslintConfig": {
