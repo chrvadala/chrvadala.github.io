@@ -1,21 +1,14 @@
 {
   "files": {
-    "main.css": "https://chrvadala.github.io/static/css/main.7a6b0ef7.chunk.css",
-    "main.js": "https://chrvadala.github.io/static/js/main.528c45b3.chunk.js",
-    "main.js.map": "https://chrvadala.github.io/static/js/main.528c45b3.chunk.js.map",
-    "runtime-main.js": "https://chrvadala.github.io/static/js/runtime-main.a2fe3980.js",
-    "runtime-main.js.map": "https://chrvadala.github.io/static/js/runtime-main.a2fe3980.js.map",
-    "static/js/2.fac1d4a1.chunk.js": "https://chrvadala.github.io/static/js/2.fac1d4a1.chunk.js",
-    "static/js/2.fac1d4a1.chunk.js.map": "https://chrvadala.github.io/static/js/2.fac1d4a1.chunk.js.map",
+    "main.css": "https://chrvadala.github.io/static/css/main.6bba38c5.css",
+    "main.js": "https://chrvadala.github.io/static/js/main.e3b54eb6.js",
+    "static/media/avatar.png": "https://chrvadala.github.io/static/media/avatar.2c99fa54461eeacb77b3.png",
     "index.html": "https://chrvadala.github.io/index.html",
-    "static/css/main.7a6b0ef7.chunk.css.map": "https://chrvadala.github.io/static/css/main.7a6b0ef7.chunk.css.map",
-    "static/js/2.fac1d4a1.chunk.js.LICENSE.txt": "https://chrvadala.github.io/static/js/2.fac1d4a1.chunk.js.LICENSE.txt",
-    "static/media/avatar.2c99fa54.png": "https://chrvadala.github.io/static/media/avatar.2c99fa54.png"
+    "main.6bba38c5.css.map": "https://chrvadala.github.io/static/css/main.6bba38c5.css.map",
+    "main.e3b54eb6.js.map": "https://chrvadala.github.io/static/js/main.e3b54eb6.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2fe3980.js",
-    "static/js/2.fac1d4a1.chunk.js",
-    "static/css/main.7a6b0ef7.chunk.css",
-    "static/js/main.528c45b3.chunk.js"
+    "static/css/main.6bba38c5.css",
+    "static/js/main.e3b54eb6.js"
   ]
 }
