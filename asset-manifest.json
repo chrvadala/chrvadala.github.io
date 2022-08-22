@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://chrvadala.github.io/static/css/main.6bba38c5.css",
-    "main.js": "https://chrvadala.github.io/static/js/main.e3b54eb6.js",
+    "main.js": "https://chrvadala.github.io/static/js/main.7fa5b367.js",
     "static/media/avatar.png": "https://chrvadala.github.io/static/media/avatar.2c99fa54461eeacb77b3.png",
     "index.html": "https://chrvadala.github.io/index.html",
     "main.6bba38c5.css.map": "https://chrvadala.github.io/static/css/main.6bba38c5.css.map",
-    "main.e3b54eb6.js.map": "https://chrvadala.github.io/static/js/main.e3b54eb6.js.map"
+    "main.7fa5b367.js.map": "https://chrvadala.github.io/static/js/main.7fa5b367.js.map"
   },
   "entrypoints": [
     "static/css/main.6bba38c5.css",
-    "static/js/main.e3b54eb6.js"
+    "static/js/main.7fa5b367.js"
   ]
 }
