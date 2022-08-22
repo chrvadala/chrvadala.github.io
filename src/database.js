@@ -110,6 +110,16 @@ export const projects = [
   },
 
   {
+    id: 'aggregate-fn',
+    org: 'chrvadala',
+    name: "Aggregate fn",
+    description: 'Aggregate fn is a Javascript utility that brings together multiple async operations. It is really useful when you want to merge many API requests together.',
+    npm: true,
+    ghActions: true,
+    coveralls: true,
+  },
+
+  {
     id: "awesome-protocols",
     org: "chrvadala",
     name: "Awesome Protocols",
