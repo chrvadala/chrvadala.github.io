@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import styles from './Introduction.module.css'
 import avatar from './avatar.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faLinkedin, faPaypal} from "@fortawesome/free-brands-svg-icons";
+import {faLinkedin, faPaypal, faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 
 export default function Introduction({author}) {
@@ -26,10 +26,17 @@ export default function Introduction({author}) {
         <FontAwesomeIcon size="lg" icon={faMapMarkerAlt}/> <span>{author.location}</span>
       </div>
 
+      {author.ghSponsor && (
+        <div className={styles.donate}>
+          <FontAwesomeIcon size="lg" icon={faGithub}/>
+          <a target="_blank" rel="noopener noreferrer" href={author.ghSponsor}>Donate via Github Sponsor</a>
+        </div>
+      )}
+
       {author.paypal && (
         <div className={styles.donate}>
           <FontAwesomeIcon size="lg" icon={faPaypal}/>
-          <a target="_blank" rel="noopener noreferrer" href={author.paypal}>Donate</a>
+          <a target="_blank" rel="noopener noreferrer" href={author.paypal}>Donate via PayPal</a>
         </div>
       )}
     </div>

@@ -4,6 +4,7 @@ export const author = {
   location: "Rome, Italy, Europe, Earth",
   linkedin: "https://www.linkedin.com/in/chrvadala",
   paypal: "https://www.paypal.me/chrvadala/15",
+  ghSponsor: "https://github.com/sponsors/chrvadala"
 }
 
 export const projects = [
