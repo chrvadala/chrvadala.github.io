@@ -1,49 +1,49 @@
-.container {
+.AuthorCard{
   min-height: 250px;
   border: 1px solid #30363d;
   border-radius: 3px;
   padding: 16px;
 }
 
-.avatar {
-  width: 250px;
-  height: 250px;
+.AuthorCard .avatar {
+  width: 200px;
+  height: 200px;
 }
 
 @media (min-width: 768px) {
-  .avatar {
+  .AuthorCard .avatar {
     margin-right: 20px;
     float: left;
   }
 }
 
-.me {
+.AuthorCard .me {
   margin-bottom: 5px;
 }
 
-.me a {
+.AuthorCard .me a {
   float: right;
   padding-left: 10px;
 }
 
-.role {
+.AuthorCard .role {
   margin-bottom: 20px;
 }
 
-.location {
+.AuthorCard .location {
   font-size: 80%;
   margin-bottom: 10px;
 }
 
-.location span {
+.AuthorCard .location span {
   padding-left: 5px;
 }
 
-.donate {
+.AuthorCard .support {
   font-size: 80%;
   margin-bottom: 10px;
 }
 
-.donate a {
+.AuthorCard .support a {
   padding-left: 8px;
 }

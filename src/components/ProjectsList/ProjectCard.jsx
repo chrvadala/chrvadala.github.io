@@ -1,8 +1,6 @@
-import PropTypes from "prop-types";
-import styles from './ProjectCard.module.css'
+import "./ProjectCard.css"
 
 export default function ProjectCard({project}) {
-
   const githubUri = `https://github.com/${project.org}/${project.id}`
   const npmUri = `https://www.npmjs.com/package/${project.id}`
   const coverallsUri = `https://coveralls.io/github/${project.org}/${project.id}`
@@ -10,14 +8,14 @@ export default function ProjectCard({project}) {
   const ghActionsUri = `https://github.com/${project.org}/${project.id}/actions`
 
   return (
-    <article className={styles.container}>
-      <div className={styles.title}>
+    <article className="ProjectCard">
+      <div className="title">
         <h2>
-          <a href={githubUri} target="_blank" rel="noopener noreferrer" className={styles.title}>
+          <a href={githubUri} target="_blank" rel="noopener noreferrer" className="name">
             {project.name}
           </a>
 
-          <a href={githubUri} target="_blank" rel="noopener noreferrer" className={styles.link}>
+          <a href={githubUri} target="_blank" rel="noopener noreferrer" className="link">
             <img
               src={`https://img.shields.io/github/stars/${project.org}/${project.id}.svg?maxAge=7200&style=social`}
               alt={`Stars for ${project.name}`}
@@ -26,9 +24,9 @@ export default function ProjectCard({project}) {
         </h2>
       </div>
 
-      <p>{project.description}</p>
+      <p className="description">{project.description}</p>
 
-      <ul className={styles.badges}>
+      <ul className="badges">
         {/*Version*/}
         {project.npm && (
           <li>
@@ -92,26 +90,14 @@ export default function ProjectCard({project}) {
       </ul>
 
       {project.npm && (
-        <div className={styles.code}>
-          npm install {project.id}
-        </div>
+        <pre>
+          <code className="code">
+            npm install {project.id}
+          </code>
+        </pre>
       )}
 
     </article>
   )
 }
 
-
-ProjectCard.propTypes = {
-  project: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    org: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-
-    travis: PropTypes.bool,
-    coveralls: PropTypes.bool,
-    ghPages: PropTypes.bool,
-    npm: PropTypes.bool,
-  })
-}

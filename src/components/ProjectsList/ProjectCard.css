@@ -1,0 +1,28 @@
+.ProjectCard {
+  border: 1px solid #30363d;
+  border-radius: 3px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.ProjectCard .title a.link {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .ProjectCard .title a.link {
+    float: right;
+    padding-left: 15px;
+  }
+}
+
+.ProjectCard ul.badges {
+  list-style-type: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.ProjectCard ul.badges li {
+  display: inline;
+  padding-right: 5px;
+}

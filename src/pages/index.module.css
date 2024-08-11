@@ -1,0 +1,7 @@
+@media screen and (max-width: 996px) {}
+.header, .main {
+  min-width: 200px;
+  max-width: 1012px;
+  margin: 0 auto;
+  padding: 15px;
+}
