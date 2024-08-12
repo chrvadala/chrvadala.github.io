@@ -5,7 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-import { LINK_GH, LINK_GH_SPONSOR, LINK_LINKEDIN, LINK_NPM, LINK_PAYPAL, LINK_WEBSITE } from './src/constants.js';
+import { GTAG, LINK_GH, LINK_GH_SPONSOR, LINK_LINKEDIN, LINK_NPM, LINK_PAYPAL, LINK_WEBSITE } from './src/constants.js';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -42,6 +42,9 @@ const config = {
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
+        },
+        googleTagManager: {
+          containerId: GTAG,
         },
       }),
     ],

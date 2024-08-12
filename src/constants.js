@@ -7,3 +7,4 @@ export const LINK_NPM = 'https://www.npmjs.com/~chr.vadala'
 export const LINK_LINKEDIN = "https://www.linkedin.com/in/chrvadala"
 export const LINK_PAYPAL = "https://www.paypal.me/chrvadala/15"
 export const LINK_GH_SPONSOR = "https://github.com/sponsors/chrvadala"
+export const GTAG = 'G-GHV35WG9ZY'
