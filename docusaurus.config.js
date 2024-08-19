@@ -69,6 +69,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: LINK_LINKEDIN,
+            label: 'Linkedin',
+            position: 'right',
+          },
         ],
       },
       footer: {
