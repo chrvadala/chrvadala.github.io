@@ -58,7 +58,7 @@ const config = {
       },
       image: 'images/social-card.png',
       navbar: {
-        title: 'Christian Vadalà website',
+        title: 'Christian website',
         // logo: {
         //   alt: 'Christian Vadalà Open Source Projects',
         //   src: 'img/logo.svg',
