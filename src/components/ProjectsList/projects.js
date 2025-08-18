@@ -20,6 +20,16 @@ export default [
   },
 
   {
+    id: 'node-ble',
+    org: 'chrvadala',
+    name: "Bluetooth Low Energy (BLE)",
+    description: 'Bluetooth Low Energy (BLE) library written with only Javascript (no bindings) - baked by Bluez via DBus',
+    npm: true,
+    ghActions: true,
+    coveralls: true,
+  },
+
+  {
     id: 'react-planner',
     org: 'cvdlab',
     name: "React Planner",
@@ -29,10 +39,30 @@ export default [
   },
 
   {
-    id: 'node-ble',
+    id: 'mqtt-dispatcher',
     org: 'chrvadala',
-    name: "Bluetooth Low Energy (BLE)",
-    description: 'Bluetooth Low Energy (BLE) library written with only Javascript (no bindings) - baked by Bluez via DBus',
+    name: "MQTT Dispatcher",
+    description: 'Node.js message dispatcher for MQTT',
+    npm: true,
+    travis: true,
+    coveralls: true,
+  },
+
+  {
+    id: 'kafka-test-helper',
+    org: 'chrvadala',
+    name: "Kafka Test Helper",
+    description: 'Utility library that simplify testing of Node.js components that interacts with Kafka broker.',
+    npm: true,
+    ghActions: true,
+    coveralls: true,
+  },
+
+  {
+    id: 'aggregate-fn',
+    org: 'chrvadala',
+    name: "Aggregate fn",
+    description: 'Aggregate fn is a Javascript utility that brings together multiple async operations. It is really useful when you want to merge many API requests together.',
     npm: true,
     ghActions: true,
     coveralls: true,
@@ -65,16 +95,6 @@ export default [
   },
 
   {
-    id: 'mqtt-dispatcher',
-    org: 'chrvadala',
-    name: "MQTT Dispatcher",
-    description: 'Node.js message dispatcher for MQTT',
-    npm: true,
-    travis: true,
-    coveralls: true,
-  },
-
-  {
     id: 'neopixel',
     org: 'chrvadala',
     name: "Neopixel",
@@ -89,26 +109,6 @@ export default [
     org: 'chrvadala',
     name: "Github Actions",
     description: 'A collection of common Github Actions, useful to test and release libraries',
-  },
-
-  {
-    id: 'kafka-test-helper',
-    org: 'chrvadala',
-    name: "Kafka Test Helper",
-    description: 'Utility library that simplify testing of Node.js components that interacts with Kafka broker.',
-    npm: true,
-    ghActions: true,
-    coveralls: true,
-  },
-
-  {
-    id: 'aggregate-fn',
-    org: 'chrvadala',
-    name: "Aggregate fn",
-    description: 'Aggregate fn is a Javascript utility that brings together multiple async operations. It is really useful when you want to merge many API requests together.',
-    npm: true,
-    ghActions: true,
-    coveralls: true,
   },
 
   {
